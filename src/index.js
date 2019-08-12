@@ -7,24 +7,16 @@ import store from './redux/store'
 import Login from './containers/login/login'
 import Register from './containers/register/register'
 import Main from './containers/main/main'
-import Chat from './containers/chat/chat'
-import List from './containers/list/list'
-import Personal from './containers/personal/personal'
-import NotFound from "./components/not-found/not-found";
+// import './test/socketio_test'
 
 
 ReactDOM.render((
     <Provider store={store}>
         <HashRouter>
             <Switch>
-
-                <Route exact path='/login' component={Login}/>
+                <Route path='/login' component={Login}/>
                 <Route path='/register' component={Register}/>
-                <Route path='/chat' component={Chat}/>
-                <Route path='personal' component={Personal}/>
-                <Route path='/list' component={List}/>
-                <Route    component={Main}/>
-                <Route  component={NotFound}/>
+                <Route component={Main}/>
             </Switch>
         </HashRouter>
     </Provider>
