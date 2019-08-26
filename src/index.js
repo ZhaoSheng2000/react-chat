@@ -7,7 +7,7 @@ import store from './redux/store'
 import Login from './containers/login/login'
 import Register from './containers/register/register'
 import Main from './containers/main/main'
-// import './test/socketio_test'
+
 
 
 ReactDOM.render((
